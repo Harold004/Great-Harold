@@ -5,16 +5,16 @@
 <script type="text/javascript">
 function validerForm() {
 	if ( document.formulaire.txtNom.value.trim() == "" ) {
-		alert ( "Veuillez saisir un nom !" );
+		alert ( "enter name!" );
 		return false;
 	}
 	txtLogin=document.formulaire.txtLogin.value;
 	if ( txtLogin.trim() == "" ) {
-		alert ( "Veuillez saisir un login !" );
+		alert ( "enter login !" );
 		return false;
 	}
 	if ( txtLogin.indexOf(" ")!=-1 ) {
-		alert ( "Le login ne doit pas comporter d'espace !" );
+		alert ( "no space in the login !" );
 		return false;
 	}
 	return true;
@@ -23,7 +23,7 @@ function validerForm() {
 
 <CENTER>
 <br>
-<h1>Ajouter un utilisateur</h1>
+<h1>Add user</h1>
 <br><br><br>
 
 <form method="POST" name="formulaire" onsubmit="return validerForm();" action="ajouterUtilisateur_trt.php">
@@ -47,9 +47,9 @@ function validerForm() {
 ?>
 </table>
 <br><br><br>
-<button type="submit" class="boutonValider">Valider</button>
+<button type="submit" class="boutonValider">Send</button>
 &nbsp;&nbsp;&nbsp
-<button type="button" class="boutonAnnuler" onclick="javascript:window.location='gererUtilisateurs.php'">Annuler</button>
+<button type="button" class="boutonAnnuler" onclick="javascript:window.location='gererUtilisateurs.php'">Dismiss</button>
 </form>
 <br><br><br>
 <b>Remarque :</b> si un mot de passe est saisi, il ne sera pas<br>recherché dans l'annuaire LDAP au moment de la connexion.
