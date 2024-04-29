@@ -5,7 +5,7 @@
 <script type="text/javascript">
 function validerForm() {
 	if ( document.formulaire.txtNom.value.trim() == "" ) {
-		alert ( "Veuillez saisir un nom !" );
+		alert ( "enter name !" );
 		return false;
 	}
 	return true;
@@ -14,7 +14,7 @@ function validerForm() {
 
 <CENTER>
 <br>
-<h1>Modifier un Fournisseur</h1>
+<h1>update supplier</h1>
 <br><br><br>
 
 <form method="POST" name="formulaire" onsubmit="return validerForm();" action="modifierFournisseur_trt.php">
@@ -32,9 +32,9 @@ function validerForm() {
 ?>
 </table>
 <br><br><br>
-<button type="submit" class="boutonValider">Valider</button>
+<button type="submit" class="boutonValider">send</button>
 &nbsp;&nbsp;&nbsp
-<button type="button" class="boutonAnnuler" onclick="javascript:window.location='gererFournisseurs.php'">Annuler</button>
+<button type="button" class="boutonAnnuler" onclick="javascript:window.location='gererFournisseurs.php'">dismiss</button>
 </form>
 
 </CENTER>
