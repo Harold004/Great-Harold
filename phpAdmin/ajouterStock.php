@@ -5,7 +5,7 @@
 <CENTER>
 
 <br>
-<h1>Ajouter un stock</h1>
+<h1>Add stock</h1>
 <br><br><br>
 
 <form method="POST" action="ajouterStock_trt.php">
@@ -17,9 +17,9 @@
 <br>
 Colonne "Destinataire" sur les sortie : <select name="selDestinataire"><option value="O">OUI</option><option selected value="N">NON</option></select>
 <br><br><br><br><br>
-<button type="submit" class="boutonValider">Valider</button>
+<button type="submit" class="boutonValider">send</button>
 &nbsp;&nbsp;&nbsp
-<button type="button" class="boutonAnnuler" onclick="javascript:window.location='gererStocks.php'">Annuler</button>
+<button type="button" class="boutonAnnuler" onclick="javascript:window.location='gererStocks.php'">dismiss</button>
 </form>
 
 </CENTER>
